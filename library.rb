@@ -30,7 +30,6 @@ book1 = Book.new("HP1", "JKR", "Science Fiction")
 book2 = Book.new("Heads you win", "Jeffrey Archer", "Fiction")
 book3 = Book.new("SQL", "Sams", "Tutorial")
 
-
 library = Library.new
 library.add_book(book1)
 library.add_book(book2)
@@ -40,5 +39,3 @@ print library.titles
 puts
 print library.authors
 puts
-
-# binding.pry
