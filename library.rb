@@ -18,6 +18,12 @@ class Library
     end
   end
 
+  def authors
+    @collection.map do |book|
+      book.author
+    end
+  end
+
 end
 
 book1 = Book.new("HP1", "JKR", "Science Fiction")
@@ -31,5 +37,8 @@ library.add_book(book2)
 library.add_book(book3)
 
 print library.titles
+puts
+print library.authors
+puts
 
 # binding.pry
