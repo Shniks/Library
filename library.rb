@@ -12,6 +12,12 @@ class Library
     @collection << book
   end
 
+  def titles
+    @collection.map do |book|
+      book.title
+    end
+  end
+
 end
 
 book1 = Book.new("HP1", "JKR", "Science Fiction")
@@ -24,4 +30,6 @@ library.add_book(book1)
 library.add_book(book2)
 library.add_book(book3)
 
-binding.pry
+print library.titles
+
+# binding.pry
